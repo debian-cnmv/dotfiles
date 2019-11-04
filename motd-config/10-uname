@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo
+figlet Debian 10
+figlet Server
