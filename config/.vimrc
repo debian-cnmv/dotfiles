@@ -6,10 +6,13 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " Basic settings
-
 set nocompatible
 set encoding=utf-8
 set number
+
+" Tabs
+set tabstop=4
+set shiftwidth=4
 
 " Colors
 syntax on
