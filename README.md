@@ -47,7 +47,7 @@ mysql -u root -p
 ```
 
 ```sql
-create user 'admin'@'localhost' identified by 'parola';
+create user 'admin'@'localhost' identified by 'the-password';
 grant all privileges on *.* to 'admin'@'localhost';
 flush privileges;
 ```
