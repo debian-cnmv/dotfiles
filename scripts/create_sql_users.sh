@@ -19,9 +19,8 @@ create_sql()
 
 if [ $# -gt 1 ];
 then
-
-	echo "Error: Too many arguments!"
 	echo "Usage: script-name [users-file]"
+	echo "users-file must contain lines like user:password"
 	echo "./users.txt is used if no file is specified"
 	exit $FAIL
 else
