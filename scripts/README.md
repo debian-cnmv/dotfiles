@@ -1,8 +1,10 @@
-# Creating users for `MySQL/MariaDB`
+# Scripts
 
-Create a simple text file and place on each line pairs like `user:user-password`.
+## Creating users for `MySQL/MariaDB`
 
-The run
+Create a simple **text file** and place on each line pairs like `user:user-password`.
+
+Then run
 
 ```sh
 ./create_sql_users.sh path/to/file
@@ -17,7 +19,7 @@ or
 
 ```
 
-which tries to use `users.txt` file from the cyrrent directory.
+which tries to use `users.txt` file from the current directory.
 
 The script creates  a `MySQL/MariaDB` *database* with the **same name** as the `user`.
 
