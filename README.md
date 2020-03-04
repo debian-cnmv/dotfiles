@@ -48,6 +48,11 @@ nc 192.168.0.12 11111
 
 + `sudo deluser --remove-home user-name`
 
+### Protect home folder
+
+```sh
+sudo chmod u= /home/user
+```
 
 ### Quota
 
