@@ -5,7 +5,7 @@ secs=$((${upSeconds}%60))
 mins=$((${upSeconds}/60%60))
 hours=$((${upSeconds}/3600%24))
 days=$((${upSeconds}/86400))
-UPTIME=`printf "%d days, %02dh%02dm%02ds" "$days" "$hours" "$mins" "$secs"`
+UPTIME=`printf "%d days, %02d hours %02d minutes" "$days" "$hours" "$mins"`
  
 # get the load averages
 read one five fifteen rest < /proc/loadavg
@@ -13,6 +13,7 @@ read one five fifteen rest < /proc/loadavg
 echo "`date +"%A, %e %B %Y, %r"`
 `uname -srmo`
 Uptime.............: ${UPTIME}
-Memory.............: `cat /proc/meminfo | grep MemFree | awk {'print $2'}`kB (Free) / `cat /proc/meminfo | grep MemTotal | awk {'print $2'}`kB (Total)
+Memory.............: `cat /proc/meminfo | grep MemFree | awk {'print int($2/(1024*1024)*100)/100'}` GB (Free) / `cat /proc/meminfo | grep MemTotal | awk {'print int($2/(1024*1024)*100)/100'}`GB (Total)
 Load Averages......: ${one}, ${five}, ${fifteen} (1, 5, 15 min)
 Running Processes..: `ps ax | wc -l | tr -d " "`"
+echo

@@ -1,4 +1,4 @@
-# Debian 10 server (self) notes
+# Debian server (self) notes
 
 ## Network
 

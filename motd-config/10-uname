@@ -1,5 +1,6 @@
 #!/bin/sh
 
 echo
-figlet Debian 10
-figlet Server
+figlet Welcome!
+echo
+
