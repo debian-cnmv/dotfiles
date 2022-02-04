@@ -1,6 +1,7 @@
 " Plugins
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
